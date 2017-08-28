@@ -22,3 +22,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Oauth Routes
 Route::get('/redirect', 'SocialAuthController@redirect');
 Route::get('/callback', 'SocialAuthController@callback');
+
+Route::get('/redirect/google', 'SocialAuthController@redirectGoogle');
+Route::get('/callback/google', 'SocialAuthController@callbackGoogle');

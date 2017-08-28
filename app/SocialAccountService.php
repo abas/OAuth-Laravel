@@ -40,4 +40,39 @@ class SocialAccountService
         }
 
     }
+
+    public function createOrGetUserGoogle(ProviderUser $providerUser)
+    {
+        $account = SocialAccount::whereProvider('google')
+            ->whereProviderUserId($providerUser->getId())
+            ->first();
+
+        if ($account) {
+            return $account->user;
+        } else {
+
+            $account = new SocialAccount([
+                'provider_user_id' => $providerUser->getId(),
+                'provider' => 'google'
+            ]);
+
+            $user = User::whereEmail($providerUser->getEmail())->first();
+
+            if (!$user) {
+
+                $user = User::create([
+                    'email' => $providerUser->getEmail(),
+                    'name' => $providerUser->getName(),
+                    'password' => bcrypt(str_random())
+                ]);
+            }
+
+            $account->user()->associate($user);
+            $account->save();
+
+            return $user;
+
+        }
+
+    }
 }

@@ -42,4 +42,11 @@ return [
       'redirect' => 'http://localhost:8000/callback',
     ],
 
+    // google OAuth
+    'google' => [
+      'client_id' => '825374464340-qu9ufa0et4oovbekvvdm1fo7koh860vs.apps.googleusercontent.com',
+      'client_secret' => 'RgAHGEee-aeIWXkSc0PRQA8q',
+      'redirect' => 'http://localhost:8000/callback/google',
+    ],
+
 ];

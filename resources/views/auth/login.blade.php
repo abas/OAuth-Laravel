@@ -62,7 +62,8 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <a href="redirect" class="btn btn-primary">FB Login</a>
+                                <a href="redirect" class="btn btn-default">Facebook</a>
+                                <a href="redirect/google" class="btn btn-default">Google</a>
                             </div>
                         </div>
                     </form>

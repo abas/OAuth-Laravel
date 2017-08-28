@@ -27,4 +27,20 @@ class SocialAuthController extends Controller
 
         return redirect()->to('/home');
     }
+
+    public function redirectGoogle()
+    {
+        return Socialite::driver('google')->redirect();
+    }
+
+    public function callbackGoogle(SocialAccountService $service)
+    {
+        // when facebook call us a with token
+        // $providerUser = \Socialite::driver('facebook')->user();
+        $user = $service->createOrGetUser(Socialite::driver('google')->user());
+
+        auth()->login($user);
+
+        return redirect()->to('/home');
+    }
 }
