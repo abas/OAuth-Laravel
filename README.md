@@ -7,6 +7,12 @@ Doc-Source https://blog.damirmiladinov.com/laravel/laravel-5.2-socialite-faceboo
   $>_ git clone https://github.com/ahmadbasir/OAuth-Facebook.git
   $>_ cd OAuth-Facebook
 ```
+#### Install Composer
+```
+  $>_ composer install
+  $>_ composer require laravel/socialite
+```
+
 
 #### Config Database
 
