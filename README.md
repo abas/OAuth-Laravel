@@ -2,13 +2,14 @@
 
 Doc-Source https://blog.damirmiladinov.com/laravel/laravel-5.2-socialite-facebook-login.html#.WaQnBT4jGUm
 
-###INIt Project
+### INIt Project
 ```
   $>_ git clone https://github.com/ahmadbasir/OAuth-Facebook.git
   $>_ cd OAuth-Facebook
 ```
 
-####Config Database
+#### Config Database
+
 pertama buat dulu database dengan nama `oauth` kemudian ubah config `.env` pada line berikut
 ```
   DB_CONNECTION=mysql
@@ -27,7 +28,8 @@ jika sudah silahkan lakukan migrasi table pada database dengan perintah
 
 `$>_ php arisan key:generate` berfungsi untuk melakukan generating key pada `.env`
 
-###Run Project
+### Run Project
+
 sekarang coba run-servenya dengan melakukan perintah
 ```
   $>_ php artisan serve
