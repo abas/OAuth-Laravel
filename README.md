@@ -1,5 +1,9 @@
 >Facebook-OAuth Laravel
 
+```
+Documentation https://blog.damirmiladinov.com/laravel/laravel-5.2-socialite-facebook-login.html#.WaQnBT4jGUm
+```
+
 ###INIt Project
 ```
   $>_ git clone https://github.com/ahmadbasir/OAuth-Facebook.git
