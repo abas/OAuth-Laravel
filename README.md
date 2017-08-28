@@ -1,8 +1,6 @@
->Facebook-OAuth Laravel
+>__Facebook-OAuth Laravel__
 
-```
-Documentation https://blog.damirmiladinov.com/laravel/laravel-5.2-socialite-facebook-login.html#.WaQnBT4jGUm
-```
+Doc-Source https://blog.damirmiladinov.com/laravel/laravel-5.2-socialite-facebook-login.html#.WaQnBT4jGUm
 
 ###INIt Project
 ```
