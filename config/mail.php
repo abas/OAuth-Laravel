@@ -26,14 +26,14 @@
 
 return array(
   "driver" => "smtp",
-  "host" => "smtp.mailtrap.io",
-  "port" => 2525,
+  "host" => "smtp.mailgun.org",
+  "port" => 587,
   "from" => array(
-      "address" => "from@example.com",
-      "name" => "Example"
+      "address" => "No-Reply_OAuth@mail.com",
+      "name" => "OAuth-RESET_PASSWORD"
   ),
-  "username" => "5af41d120701e1",
-  "password" => "7208fc05eadee8",
+  "username" => "postmaster@sandboxf1d2718da8474ae19bf338a7941b8585.mailgun.org",
+  "password" => "jhagbuyetbiwqu3t728",
   "sendmail" => "/usr/sbin/sendmail -bs",
   "pretend" => false
 );
