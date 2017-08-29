@@ -1,11 +1,11 @@
 >__Facebook-OAuth Laravel__
 
-Doc-Source https://blog.damirmiladinov.com/laravel/laravel-5.2-socialite-facebook-login.html#.WaQnBT4jGUm
+Doc-Source [blog.damirmiladinov.com](https://blog.damirmiladinov.com/laravel/laravel-5.2-socialite-facebook-login.html#.WaQnBT4jGUm)
 
 ### INIt Project
 ```
-  $>_ git clone https://github.com/ahmadbasir/OAuth-Facebook.git
-  $>_ cd OAuth-Facebook
+  $>_ git clone https://github.com/ahmadbasir/OAuth-Laravel.git
+  $>_ cd OAuth-Laravel
 ```
 #### Install Composer
 ```
